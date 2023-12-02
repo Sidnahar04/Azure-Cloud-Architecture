@@ -1,4 +1,4 @@
-# CAPSTONE PROJECT – Azure Cloud Architecture
+# Azure Cloud Architecture
 
 In the rapidly evolving landscape of modern technology, the advent of cloud computing has revolutionized how businesses and individuals store, access, and process data. This capstone project endeavors to deal into the intricate real of cloud architecture, aiming to design and develop an efficient, scalable, and secure infrastructure that caters to contemporary computing demands.
 Our objective is to Create a scalable and secure cloud architecture for Bank Institution optimizing for performance, cost efficiency, and seamless data integration to support business growth and innovation.Here we have the industry as a Bank Institution in which we are getting some inputs from the database and we expecting some results from that.
