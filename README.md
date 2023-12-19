@@ -1,6 +1,6 @@
 # E-commerce Azure Cloud Architecture
 
-## What is Cloud Architecture?
+# What is Cloud Architecture?
 Cloud architecture refers to how various cloud technology components, such as hardware, virtual resources, software capabilities, and virtual network systems interact and connect to create cloud computing environments.
 Cloud architecture coordinates component integration, allowing resource pooling, sharing, and scalable operations across networks. It's akin to an architectural blueprint for deploying applications in cloud environments.
 
@@ -83,13 +83,18 @@ We found that our initial comprehension of the cloud architecture's layer struct
 ### Used Azure Services:
 
 **Azure Event Hub:** Azure Event Hubs is a Big Data streaming platform and event ingestion service that can receive and process millions of events per second. Event Hubs can process and store events, data, or telemetry produced by distributed software and devices.
+
 **Azure Stream Analytics:** Azure Stream Analytics is a fully managed, real-time analytics service designed to help you analyze and process fast moving streams of data that can be used to get insights, build reports or trigger alerts and actions.
+
 **Azure Pipeline:** Scheduled triggers are independent of the repository and allow you to run a pipeline according to a schedule. Pipeline triggers in YAML pipelines and build completion triggers in classic build pipelines allow you to trigger one pipeline upon the completion of another.
-**Azure Data Lake Storage Gen 2:** Azure Data Lake Storage is a cloud-based, enterprise data lake solution. It's engineered to store massive amounts of data in any format, and to facilitate big data analytical workloads. Azure Data Lake Storage Gen2 is a set of capabilities dedicated to big data analytics, built on Azure Blob Storage
+
+**Azure Data Lake Storage Gen 2:** Azure Data Lake Storage is a cloud-based, enterprise data lake solution. It's engineered to store massive amounts of data in any format, and to facilitate big data analytical workloads. Azure Data Lake Storage Gen2 is a set of capabilities dedicated to big data analytics, built on Azure Blob Storage.
+
 **Azure Delta Lake:** Delta Lake is the optimized storage layer that provides the foundation for storing data and tables in the Databricks Lakehouse. Delta Lake is open-source software that extends Parquet data files with a file-based transaction log for ACID transactions and scalable metadata handling.
+
 **Azure synapse Analytics:** Azure Synapse Analytics is a cloud-based analytics service on Azure that combines data warehousing, big data analytics, and data integration. It offers scalability, integration with various data sources, advanced analytics capabilities, and a unified workspace for efficient collaboration among data professionals.
 
-This is our ultimate architecture setup: the source data is directed to the ingestion layer, creating batches. Part of the data goes to Azure Event Hub, while the rest enters pipelines triggered for processing. The data then moves into the lake house architecture, beginning with Azure Data Lake Gen 2. Curated data progresses to Delta Lake, forming the silver layer. Further transformations take place in Synapse Analytics. Eventually, the aggregated data is transmitted to end-users or the analysis team for deeper insights, working with refined data.
+This is our ***ultimate architecture setup***: the source data is directed to the ingestion layer, creating batches. Part of the data goes to Azure Event Hub, while the rest enters pipelines triggered for processing. The data then moves into the lake house architecture, beginning with Azure Data Lake Gen 2. Curated data progresses to Delta Lake, forming the silver layer. Further transformations take place in Synapse Analytics. Eventually, the aggregated data is transmitted to end-users or the analysis team for deeper insights, working with refined data.
 
 After deployment, the Azure cloud environment will feature interconnected services forming an end-to-end data processing and analytics infrastructure. Data will flow through different stages, undergo transformations, be stored, analyzed, and eventually utilized for generating insights or driving specific actions based on the architecture's design and functionality.
 
